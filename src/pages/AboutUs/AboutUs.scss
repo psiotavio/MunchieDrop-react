@@ -1,0 +1,53 @@
+.container-content
+{
+    width: 70rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    font-size: 17px;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 25px;
+    justify-content: center;
+    font-weight: normal;
+    text-align: justify;
+    width: 350px;
+}
+
+.content h2{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.content h3{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.image-aboutUs{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    background-size: cover;
+}
+
+.Left-page-img{
+ overflow-x:hidden;
+ display: flex;
+ position: absolute;
+ left: -2rem;
+ top: 10rem;
+}
+
+
+.Right-page-img{
+    overflow-x: hidden;
+    display: flex;
+    position: absolute;
+    right: -2rem;
+    top: 10rem;
+    background-repeat: repeat;
+}

@@ -1,0 +1,76 @@
+.modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    transition: opacity 0.2s ease-in-out;
+  
+    > .modal {
+      width: 50%;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 2px 2px 10px 2px #0000001a;
+      max-height: 90%;
+      overflow-y: auto;
+      background: white;
+  
+      > .header {
+        flex-direction: row-reverse;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        gap: 16px;
+  
+        > h1 {
+          margin: 0 auto; /* Define as margens laterais como "auto" */
+          display: flex; /* Permite usar "justify-content" para centralizar */
+          justify-content: center; /* Centraliza horizontalmente o conteúdo */
+          align-items: center; /* Centraliza verticalmente o conteúdo (opcional) */
+          text-align: center;
+          color: var(color-primary);
+          font-size: 36px;
+        }
+  
+        > .close-icon {
+          margin-left:auto;
+          background: #e8ebf0;
+          width: 30px;
+          height: 30px;
+          min-width: 30px;
+          min-height: 30px;
+          font-size: 14px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          border-radius: 50%;
+          position: absolute;
+        }
+      }
+  
+      > .content {
+        width: 80%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        padding: 1rem 2rem;
+      }
+    }
+  }
+  
+  .modal-container-open {
+    opacity: 1;
+  }
+  
+  .modal-container-close {
+    opacity: 0;
+  }
+  
