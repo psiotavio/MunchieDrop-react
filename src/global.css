@@ -1,0 +1,13 @@
+:root {
+    --color-primary: #26bccdff;
+    --color-secondary: #ffde26ff;
+  }
+
+  h1{
+    font-size: 56px;
+    text-align: center;
+    font-weight: bolder;
+    color:#26bccdff
+  }
+  
+  

@@ -1,0 +1,27 @@
+.cards-component{
+  display: flex;
+  border-radius: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 1s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.26),
+              0 3px 4px rgba(0, 0, 0, 0.43) !important;
+}
+
+.cards-component:hover{
+  transition: 1s;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.46),
+              0 5px 14px rgba(0, 0, 0, 0.83) !important;
+}
+
+.button{
+  padding: 10px;
+  margin-top: 220px;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+  
