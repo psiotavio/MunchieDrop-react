@@ -16,12 +16,14 @@ export const FoodContainer: React.FC<FoodContainerProps> = ({
   children,
 }) => {
   return (
-    <Card className='cards-component' sx={{ maxWidth: 345 , maxHeight: 345}} style={{ backgroundImage: `url(${image})`, borderRadius: '20px'}}>
+    <Card className='cards-component' sx={{ maxWidth: 345 , maxHeight: 345}} style={{ backgroundImage: `url(${image})`, borderRadius: '20px'}}onClick={onButtonClick}>
       <CardActionArea className='all'>
         <div className='button'>
-        <ButtonComponent type={'primary'} onClick={function (): void {
-          throw new Error('Function not implemented.');
-        } } children={children} size={2} id={''} />
+        <ButtonComponent
+         type={'primary'} 
+        onClick={onButtonClick}
+         children={children}
+          size={2} id={''} />
         </div>
       </CardActionArea>
     </Card>
