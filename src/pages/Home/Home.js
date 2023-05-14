@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import HeaderComponent from "../../components/header/Header";
-import { FoodContainer } from "../../components/foodcontainer/foodContainer.tsx";
+import { FoodContainer } from "../../components/foodcontainer/foodContainer";
 import PizzaHut from '../../components/imgs/restaurants/pizzahut.webp';
 import BurgerKing from '../../components/imgs/restaurants/burgerking.webp';
 import McDonalds from '../../components/imgs/restaurants/mcdonalds.webp';
-import RestaurantModal from "../../components/restaurantModal/restaurantModal.tsx";
-import FoodOption from "../../components/foodOption/foodOption.tsx";
+import RestaurantModal from "../../components/restaurantModal/restaurantModal";
+import FoodOption from "../../components/foodOption/foodOption";
 import BigMac from "../../components/imgs/foods/bigmac.webp"
 import Pizza1 from "../../components/imgs/foods/pizzahut/pizza1.webp"
 import Pizza2 from "../../components/imgs/foods/pizzahut/pizza2.webp"
@@ -21,7 +21,7 @@ function Home() {
   });
   const [selectedFood, setSelectedFood] = useState('');
 
-  const openModal = (food: string) => {
+  const openModal = (food) => {
     setSelectedFood(food);
     setModalOpen((prevState) => ({
       ...prevState,
@@ -30,7 +30,7 @@ function Home() {
   };
 
 
-  const closeModal = (food: string) => {
+  const closeModal = (food) => {
     setModalOpen((prevState) => ({
       ...prevState,
       [food]: false

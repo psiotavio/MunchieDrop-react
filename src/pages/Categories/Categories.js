@@ -1,6 +1,6 @@
 import HeaderComponent from "../../components/header/Header";
 import React from "react";
-import { FoodContainer } from "../../components/foodcontainer/foodContainer.tsx";
+import { FoodContainer } from "../../components/foodcontainer/foodContainer";
 import Hamburger from '../../components/imgs/categories/hamburger.webp';
 import Healthy from '../../components/imgs/categories/healthy.webp';
 import Pasta from '../../components/imgs/categories/pasta.webp';

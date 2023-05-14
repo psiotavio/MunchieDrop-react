@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '@mui/material/Card';
 import {CardActionArea } from '@mui/material';
-import { ButtonComponent } from '../buttonComponent/button.tsx';
+import { ButtonComponent } from '../buttonComponent/button';
 import './foodContainer.scss'
 
 interface FoodContainerProps {

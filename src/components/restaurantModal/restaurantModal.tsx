@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Modal } from "../modalComponent/modalComponent.tsx";
+import { Modal } from "../modalComponent/modalComponent";
 import React from "react";
 import './restaurantModal.scss'
 
