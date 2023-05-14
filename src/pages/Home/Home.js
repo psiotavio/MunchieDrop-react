@@ -11,6 +11,10 @@ import Pizza1 from "../../components/imgs/foods/pizzahut/pizza1.webp"
 import Pizza2 from "../../components/imgs/foods/pizzahut/pizza2.webp"
 import Pizza3 from "../../components/imgs/foods/pizzahut/pizza3.webp"
 
+import whooper from "../../components/imgs/foods/buergerking/whoper.webp"
+import bacon from "../../components/imgs/foods/buergerking/bacon.webp"
+import cheese from "../../components/imgs/foods/buergerking/cheeseDuplo.webp"
+
 import './Home.scss'
 
 function Home() {
@@ -81,7 +85,7 @@ function Home() {
             cartButtonText={""}
           />
           <FoodOption
-            image={Pizza2}
+            image={Pizza2 }
             title={"Pepperoni"}
             onCartButtonClick={() => {
               // Lógica para adicionar ao carrinho para Burger King
@@ -111,12 +115,32 @@ function Home() {
         >
           <h1 className="h1-restaurant">{selectedFood}</h1>
           <FoodOption
-            image={BigMac}
-            title={"Big Mac"}
+            image={whooper}
+            title={"Whooper"}
             onCartButtonClick={() => {
               // Lógica para adicionar ao carrinho para Burger King
             }}
-            price="22,00"
+            price="15,00$"
+            cartButtonText={""}
+          />
+
+<FoodOption
+            image={bacon}
+            title={"Bacon Cheeseburger"}
+            onCartButtonClick={() => {
+              // Lógica para adicionar ao carrinho para Burger King
+            }}
+            price="9,00$"
+            cartButtonText={""}
+          />
+
+<FoodOption
+            image={cheese}
+            title={"CheeseBurger"}
+            onCartButtonClick={() => {
+              // Lógica para adicionar ao carrinho para Burger King
+            }}
+            price="7,00$"
             cartButtonText={""}
           />
         </RestaurantModal>

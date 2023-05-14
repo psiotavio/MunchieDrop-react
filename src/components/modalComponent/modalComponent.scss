@@ -10,6 +10,7 @@
     background: rgba(0, 0, 0, 0.2);
     z-index: 9999;
     transition: opacity 0.2s ease-in-out;
+
   
     > .modal {
       width: 50%;
@@ -56,6 +57,7 @@
       }
   
       > .content {
+        gap: 15px;
         width: 80%;
         align-self: center;
         display: flex;
