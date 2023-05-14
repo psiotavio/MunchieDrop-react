@@ -7,7 +7,7 @@
     font-size: 56px;
     text-align: center;
     font-weight: bolder;
-    color:#26bccdff
+    color:var(--color-primary);
   }
   
   
