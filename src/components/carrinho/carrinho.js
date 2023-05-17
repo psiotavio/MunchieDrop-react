@@ -11,7 +11,6 @@ function fecharModalCarrinho() {
 
 
 
-
 // Função para adicionar um item ao carrinho
 function adicionarItemAoCarrinho(item) {
   carrinho.push(item); // Adiciona o item ao array do carrinho

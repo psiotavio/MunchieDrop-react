@@ -27,7 +27,7 @@ function AboutUs() {
                     <h2>What are our accomplishment until now?</h2>
                     <p>We already finished in developing a solid 6-wings drones that is lighter and more reliable than most of other drones on the market just for fun</p>
                 </div>
-                <iframe className="videozinho"src="https://drive.google.com/file/d/1id9pefLcYX-dsl3VUD3jTjYc7pAJKzzH/preview"  allow="autoplay"></iframe>
+                <iframe className="videozinho"src="https://vimeo.com/796777880/d0c2acb9f5?embedded=false&source=vimeo_logo&owner=194251954"  allow="autoplay"></iframe>
             </div>
             <img className="Right-page-img" src={Right} alt="right-png" />
         </div>
