@@ -6,7 +6,7 @@ interface ButtonProps {
   type: 'primary' | 'secondary';
   onClick: () => void;
   children: React.ReactNode;
-  size: 3 | 2 | 1;
+  size: 4 | 3 | 2 | 1;
   icon?: React.ReactNode;
   borderRadius?: number;
   id: string;

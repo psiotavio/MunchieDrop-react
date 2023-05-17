@@ -7,10 +7,16 @@ import Pasta from '../../components/imgs/categories/pasta.webp';
 import Pizza from '../../components/imgs/categories/pizza.webp';
 import SeaFood from '../../components/imgs/categories/seafood.webp';
 import Steak from '../../components/imgs/categories/steak.webp';
+import { Link, useNavigate } from 'react-router-dom';
 
 import './Categories.scss'
 
 function Categories(){
+
+    const handleButtonClick = () => {
+        window.location.href = '/hamburger';
+      };
+
     return (
         <div className="app">
         <HeaderComponent />
@@ -19,7 +25,8 @@ function Categories(){
         <div className="foods">
         <div className="grid">
         <FoodContainer
-        image={Hamburger} 
+        image={Hamburger}
+        onButtonClick={handleButtonClick} 
         children="Hamburger">
         </FoodContainer>
 

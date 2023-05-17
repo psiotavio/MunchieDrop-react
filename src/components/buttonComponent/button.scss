@@ -40,6 +40,10 @@
 .button-container-secondary {
   background-color: var(--color-primary) !important;
   color: white !important;
+
+  &:hover {
+    filter: brightness(90%);
+  }
 }
 
 .button-container-size-3 {
@@ -49,6 +53,15 @@
   height: 25px;
   font-size: 14px !important;
   font-weight: bold !important;
+}
+
+.button-container-size-4 {
+  background-color: var(--color-primary) !important;
+  color: #fff;
+  text-transform: none !important;
+  font-weight: bold !important;
+  border-radius: 50px !important;
+  font-size: 16px;
 }
 
 .button-container-size-2 {

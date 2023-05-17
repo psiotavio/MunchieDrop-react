@@ -6,6 +6,7 @@ import BurgerKing from '../../components/imgs/restaurants/burgerking.webp';
 import McDonalds from '../../components/imgs/restaurants/mcdonalds.webp';
 import RestaurantModal from "../../components/restaurantModal/restaurantModal";
 import FoodOption from "../../components/foodOption/foodOption";
+
 import BigMac from "../../components/imgs/foods/bigmac.webp"
 import Pizza1 from "../../components/imgs/foods/pizzahut/pizza1.webp"
 import Pizza2 from "../../components/imgs/foods/pizzahut/pizza2.webp"
@@ -16,8 +17,11 @@ import bacon from "../../components/imgs/foods/buergerking/bacon.webp"
 import cheese from "../../components/imgs/foods/buergerking/cheeseDuplo.webp"
 
 import './Home.scss'
+import { Modal } from "components/modalComponent/modalComponent";
+import { ButtonComponent } from "components/buttonComponent/button";
 
 function Home() {
+
   const [modalOpen, setModalOpen] = useState({
     'Pizza Hut': false,
     'Burger King': false,
@@ -45,7 +49,6 @@ function Home() {
     <div className="app">
       <HeaderComponent />
       <h1>Popular</h1>
-
       <div className="foods">
         <div className="grid">
           <FoodContainer
@@ -78,30 +81,24 @@ function Home() {
           <FoodOption
             image={Pizza1}
             title={"Brazilian"}
-            onCartButtonClick={() => {
-              // Lógica para adicionar ao carrinho para Burger King
-            }}
+            onCartButtonClick={() => {}}
             price="44,00$"
             cartButtonText={""}
           />
           <FoodOption
             image={Pizza2 }
             title={"Pepperoni"}
-            onCartButtonClick={() => {
-              // Lógica para adicionar ao carrinho para Burger King
-            }}
+            onCartButtonClick={() => {}}
             price="44,00$"
             cartButtonText={""}
           />
           <FoodOption
-            image={Pizza3}
-            title={"Pepperoni with catupiry"}
-            onCartButtonClick={() => {
-              // Lógica para adicionar ao carrinho para Burger King
-            }}
-            price="44,00$"
-            cartButtonText={""}
-          />
+        image={Pizza3}
+        title="Pepperoni with catupiry"
+        onCartButtonClick={() => {}}
+        price="44,00$"
+        cartButtonText=""
+      />
         </RestaurantModal>
 
 

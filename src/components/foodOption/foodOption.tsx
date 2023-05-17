@@ -11,7 +11,8 @@ interface FoodOptionProps {
   image: string;
   title: string;
   price: string;
-  cartButtonText: string;
+  cartButtonText?: string;
+  showButton?: boolean;
   onCartButtonClick: () => void;
 }
 
@@ -20,6 +21,7 @@ const FoodOption: React.FC<FoodOptionProps> = ({
   title,
   price,
   cartButtonText,
+  showButton = true,
   onCartButtonClick,
 }) => {
   return (
@@ -34,9 +36,9 @@ const FoodOption: React.FC<FoodOptionProps> = ({
       <Typography className="food-price" variant="body2" color="text.secondary">
           {price}
         </Typography>
-        <ButtonComponent type={'secondary'} onClick={function (): void {
-                  throw new Error('Function not implemented.');
-              } } children="Add to Cart" size={3} id={''} />
+        {showButton &&(
+        <ButtonComponent type={'secondary'} onClick={onCartButtonClick} children="Add to Cart" size={3} id={''} />
+  )}
       </CardActions>
     </Card>
   );

@@ -4,6 +4,7 @@ import {CardActionArea } from '@mui/material';
 import { ButtonComponent } from '../buttonComponent/button';
 import './foodContainer.scss'
 
+
 interface FoodContainerProps {
   image: string;
   onButtonClick: () => void;
@@ -15,15 +16,16 @@ export const FoodContainer: React.FC<FoodContainerProps> = ({
   onButtonClick,
   children,
 }) => {
+  
   return (
     <Card className='cards-component' sx={{ maxWidth: 345 , maxHeight: 345}} style={{ backgroundImage: `url(${image})`, borderRadius: '20px'}}onClick={onButtonClick}>
       <CardActionArea className='all'>
         <div className='button'>
         <ButtonComponent
          type={'primary'} 
-        onClick={onButtonClick}
+         onClick={onButtonClick}
          children={children}
-          size={2} id={''} />
+         size={2} id={''} />
         </div>
       </CardActionArea>
     </Card>
