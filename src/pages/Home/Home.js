@@ -7,14 +7,15 @@ import McDonalds from '../../components/imgs/restaurants/mcdonalds.webp';
 import RestaurantModal from "../../components/restaurantModal/restaurantModal";
 import FoodOption from "../../components/foodOption/foodOption";
 
+import whooper from "../../components/imgs/foods/buergerking/whoper.webp"
+import bacon from "../../components/imgs/foods/buergerking/bacon.webp"
+import cheese from "../../components/imgs/foods/buergerking/cheeseDuplo.webp"
 import BigMac from "../../components/imgs/foods/bigmac.webp"
 import Pizza1 from "../../components/imgs/foods/pizzahut/pizza1.webp"
 import Pizza2 from "../../components/imgs/foods/pizzahut/pizza2.webp"
 import Pizza3 from "../../components/imgs/foods/pizzahut/pizza3.webp"
 
-import whooper from "../../components/imgs/foods/buergerking/whoper.webp"
-import bacon from "../../components/imgs/foods/buergerking/bacon.webp"
-import cheese from "../../components/imgs/foods/buergerking/cheeseDuplo.webp"
+
 
 import './Home.scss'
 import { Modal } from "components/modalComponent/modalComponent";
